@@ -1,0 +1,168 @@
+.border-bottom-primary {
+    border-bottom: 28px solid $clr-primary;
+}
+.banner {
+    background-image: url("/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    color: $clr-white;
+    background-color: gray;
+    background-blend-mode: multiply;
+    hr{
+        width: 30%;
+        margin: 2rem auto;
+    }
+    h2 {
+        font-size: clamp(2rem, 3vh, 3rem);
+    }
+    h3 {
+        font-size: clamp(1.5rem, 2vh, 2rem);
+    }
+    
+}
+
+.services {
+    padding: 6rem 0;
+    color: $clr-gray;
+    &__wrapper {
+        @include grid(3, 2rem);
+        @include mediaQuery() {
+            @include grid(1, 2rem)
+        }
+    }
+}
+
+.claim {
+    padding: 5rem 0;
+    color: $clr-white;
+    background-color: $clr-gray;
+    h2 {
+        font-size: clamp(2.5rem, 3vh, 2rem);
+    }
+}
+
+.about {
+    &__wrapper {
+        gap: 3rem;
+        @include mediaQuery() {
+            display: block !important;
+        }
+    }
+    
+    img {
+        @include mediaQuery () {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        
+    }
+}
+.bg--f9 {
+    background-color: #f9f9f9;
+}
+.employer {
+    hr{
+        width: 8rem;
+        margin: 1rem auto;
+    }
+    
+    
+}
+.tns-nav {
+    text-align: center;
+    margin-top: 5rem;
+    button {
+        background-color: gray;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: none;
+        margin: 0 0.2rem;
+        border-radius: 50%;
+    }
+    .tns-nav-active {
+        background-color: $clr-primary;
+    }
+}
+
+.FAQs {
+    padding: 6rem 0;
+    background-color: #f9f9f9;
+}
+
+.location {
+
+    &__wrapper {
+        gap: 3rem;
+        @include mediaQuery (945px) {
+            display: block !important;  
+        }
+    }
+    background-color: $clr-gray;
+    p {
+        color: $clr-white;
+    }
+    &__content {
+        h2 {
+            font-size: clamp(3rem, 2vh, 2rem);
+        }
+        
+    }
+    .gmap {
+        iframe {
+            @include mediaQuery(945px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+
+.location__content {
+    hr {
+        border: 1px solid $clr-primary;
+    }
+}
+.footer{
+    background-color: $clr-primary;
+    color: $clr-white;
+    &__wrapper {
+        ul li {
+            border-right: solid 1px $clr-white;
+            &:last-child {
+                border-right: none;
+            }
+            text-align: center;
+            padding: 0 2rem;
+            @include mediaQuery(945px) {
+                border: none;
+                text-align: left;
+                padding: 0;
+            }
+            
+        }
+        ul {
+            @include mediaQuery (945px) {
+                display: block !important;
+            }
+        }
+        a{
+            color: $clr-white;
+            @include mediaQuery () {
+                font-size: clamp(0.8rem, 1vh, 2rem);
+                
+            }
+        }
+        p {
+            @include mediaQuery () {
+                text-align: left;
+            }
+        }
+
+
+    }
+    
+    
+}
+
